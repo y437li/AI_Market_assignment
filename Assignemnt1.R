@@ -22,7 +22,7 @@ cor(data[,c(1:6)])
 
 ###split the data
 train_end <- floor(0.75*nrow(data))
-test_star = train_end+1
+test_star <- train_end+1
 train_data <- data[0:train_end,]
 test_data <- data[test_star:nrow(data),]
   
@@ -33,8 +33,8 @@ summary(model1)
 
 #predict test data
 model1_test_result <- predict(model1, newdata=test_data)
-TSS1 = sum((test_data$sales-mean(test_data$sales))^2)
-RSS1 = sum((test_data$sales-model1_test_result)^2)
+TSS1 <- sum((test_data$sales-mean(test_data$sales))^2)
+RSS1 <- sum((test_data$sales-model1_test_result)^2)
 test_R_squared1 = 1 - (RSS1/TSS1)
 ###########################
 #train R squared:0.06081
@@ -58,8 +58,8 @@ dwtest(model2)
 
 #predict test data
 model2_test_result <- predict(model2, newdata=test_data)
-TSS2 = sum((test_data$sales-mean(test_data$sales))^2)
-RSS2 = sum((test_data$sales-model2_test_result)^2)
+TSS2 <- sum((test_data$sales-mean(test_data$sales))^2)
+RSS2 <- sum((test_data$sales-model2_test_result)^2)
 test_R_squared2 = 1 - (RSS2/TSS2)
 ###########################
 #train R squared:0.3237
@@ -82,8 +82,8 @@ dwtest(model3)
 
 #predict test data
 model3_test_result <- predict(model3, newdata=test_data)
-TSS3 = sum((test_data$sales-mean(test_data$sales))^2)
-RSS3 = sum((test_data$sales-model3_test_result)^2)
+TSS3 <- sum((test_data$sales-mean(test_data$sales))^2)
+RSS3 <- sum((test_data$sales-model3_test_result)^2)
 test_R_squared3 = 1 - (RSS3/TSS3)
 ###########################
 #train R squared:0.84
@@ -106,8 +106,8 @@ dwtest(model4)
 
 #predict test data
 model4_test_result <- predict(model4, newdata=test_data)
-TSS4 = sum((test_data$sales-mean(test_data$sales))^2)
-RSS4 = sum((test_data$sales-model4_test_result)^2)
+TSS4 <- sum((test_data$sales-mean(test_data$sales))^2)
+RSS4 <- sum((test_data$sales-model4_test_result)^2)
 test_R_squared4 = 1 - (RSS4/TSS4)
 ###########################
 #train R squared:0.84
@@ -130,8 +130,8 @@ dwtest(model5)
 
 #predict test data
 model5_test_result <- predict(model5, newdata=test_data)
-TSS5 = sum((test_data$sales-mean(test_data$sales))^2)
-RSS5 = sum((test_data$sales-model5_test_result)^2)
+TSS5 <- sum((test_data$sales-mean(test_data$sales))^2)
+RSS5 <- sum((test_data$sales-model5_test_result)^2)
 test_R_squared5 = 1 - (RSS5/TSS5)
 ###########################
 #train R squared:0.9135
@@ -154,8 +154,8 @@ dwtest(model6)
 
 #predict test data
 model6_test_result <- predict(model6, newdata=test_data)
-TSS6 = sum((test_data$sales-mean(test_data$sales))^2)
-RSS6 = sum((test_data$sales-model6_test_result)^2)
+TSS6 <- sum((test_data$sales-mean(test_data$sales))^2)
+RSS6 <- sum((test_data$sales-model6_test_result)^2)
 test_R_squared6 = 1 - (RSS6/TSS6)
 ###########################
 #train R squared:0.9201
@@ -178,8 +178,8 @@ dwtest(model5_1)
 
 #predict test data
 model5_1_test_result <- predict(model5_1, newdata=test_data)
-TSS5_1 = sum((test_data$sales-mean(test_data$sales))^2)
-RSS5_1 = sum((test_data$sales-model5_1_test_result)^2)
+TSS5_1 <- sum((test_data$sales-mean(test_data$sales))^2)
+RSS5_1 <- sum((test_data$sales-model5_1_test_result)^2)
 test_R_squared5_1 = 1 - (RSS5_1/TSS5_1)
 ###########################
 #train R squared:0.9201

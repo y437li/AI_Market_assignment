@@ -162,7 +162,7 @@ test_R_squared6 = 1 - (RSS6/TSS6)
 #test R squared:0.92018
 ###########################
 
-##Multiple linear regression with six factors
+##Multiple linear regression with five factors
 model5_1<-lm(sales~price+store+billboard+sat+comp,data=train_data)
 ##Anova table,F-test
 anova(model5_1)
